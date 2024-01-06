@@ -1,0 +1,96 @@
+crear carpeta: mkdir nombreCarpeta
+crear archivo: touch nombreArchivo.txt
+limpiar: clear o Ctrl + l
+listar archivs y carpetas del directorio: ls
+listado archivos/dir o subcarp: ls -l
+listado y peso: ls -lh
+donde estoy: pwd
+muestra cntenido: cat nombreArchivo.txt
+muestra: ls -lh
+
+
+entrar a directorio: cd nombreCarpeta
+retroceder directorio: cd ..
+directorio raiz: cd /c
+salir: exit
+
+nombre: git config --global user.name "Claudia Carrizo"
+correo: git config --global user.email claucarrizo2309@gmail.com
+editor: git config --global core.editor "code --wait"
+ver config global: git config --global  -e
+
+config win : git config --global core.autocrlf true   /input-linux
+inicializar proyecto: git init (estando en carpeta)
+detalle de implementacion: $ ls -a
+
+
+comprometer(commit) archivo
+    git commit -m "Commit inicial"
+    git commit -m "renombrando archivo"
+
+agrega eliminar y recupera archivos
+    git add archivo.txt
+    git rm archivo.txt (remove)
+    git restore archivo.txt (restaura)
+    eliminar carpeta: rm -r nombreCarpeta/
+
+renombrar archivo
+    git mv notas_git.txt archivo1.txt
+
+archivo modificado
+    git add archivo
+
+ignorar archivo
+    .gitignore
+    .env (archivo)
+    node_modules/ (carpetas)
+
+
+///// VISUALIZAR CAMBIOS /////
+
+git status -s
+
+git diff
+    muestra las partes editadas del archivo 
+    para salir <- q ->
+git log 
+    "muestra HISTORIAL de QUIÉN hizo edicion
+    git log --oneline
+git diff --staged
+
+///// RAMAS DE GIT O BRANCHES /////
+git restore --staged archivo.txt  <-restaura->
+
+ubicación en BRANCH
+    git BRANCH
+
+crear BRANCH
+    git checkout -b ramab  <-feactures/nombre de a funcionalidad
+    
+    1¬ add archivo2.txt
+    2¬ commit -m "actualizando archivo 2 "
+
+    cat archivo2.txt 
+        muestra contenido
+
+mover entre BRANCH
+    git checkout ramab 
+
+mezlar codigo MERGE
+    git merge ramab
+
+
+CREAR REPOSITORIO
+    git init
+/*configurar Repositorio*/
+    git config user.name "clau-carrizo"
+    git user.email claucarrizo2309
+    /*conexion*/
+    git remote add origin "https://github.com/clau-carrizo/Aprendiendo_Git.git"
+
+subir a la nube PUSH
+    add
+    commit -m "detalle mensaje"
+    git push -u origin
+
+    
