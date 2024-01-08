@@ -14,6 +14,10 @@ retroceder directorio: cd ..
 directorio raiz: cd /c
 salir: exit
 
+********************************
+//////  Git -CONFIG     ////////
+******************************** 
+
 nombre: git config --global user.name "Claudia Carrizo"
 correo: git config --global user.email claucarrizo2309@gmail.com
 editor: git config --global core.editor "code --wait"
@@ -58,29 +62,12 @@ git log
     git log --oneline
 git diff --staged
 
-///// RAMAS DE GIT O BRANCHES /////
-git restore --staged archivo.txt  <-restaura->
 
-ubicación en BRANCH
-    git BRANCH
-
-crear BRANCH
-    git checkout -b ramab  <-feactures/nombre de a funcionalidad
-    
-    1¬ add archivo2.txt
-    2¬ commit -m "actualizando archivo 2 "
-
-    cat archivo2.txt 
-        muestra contenido
-
-mover entre BRANCH
-    git checkout ramab 
-
-mezlar codigo MERGE
-    git merge ramab
+****************************
+////  CREAR REPOSITORIO ////
+****************************
 
 
-CREAR REPOSITORIO
     git init
 /*configurar Repositorio*/
     git config user.name "clau-carrizo"
@@ -93,4 +80,41 @@ subir a la nube PUSH
     commit -m "detalle mensaje"
     git push -u origin
 
+CLONAR REPOSITORIO
+    git clone + https://github.com/clau-carrizo/Iniciando_Git/tree/master (direccion github)
+
+PULL REPOSITORIO
+    git pull + origin + rama 
+
+
+*********************************
+///// RAMAS DE GIT O BRANCHES ///
+**********************************
+git restore --staged archivo.txt  <-restaura->
+
+ubicación en BRANCH
+    git BRANCH
+
+verifica nombreBRANCH
+    git checkout -b ramab
+
+crear BRANCH
+    git BRANCH ramab
     
+    muestra contenido archivo
+    cat archivo2.txt 
+
+renombrar BRANCH
+    git branch -m nombreBRANCHactual + nombreBRANCHfinal
+
+mover entre BRANCH
+    git checkout rama1 
+
+eliminar BRANCH
+    git branch -d + nombreBRANCH
+
+crear archivo en nuevo BRANCH
+    touch "new_branch.txt"
+
+mezlar codigo MERGE
+    git merge ramab
