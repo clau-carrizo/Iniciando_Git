@@ -116,5 +116,13 @@ eliminar BRANCH
 crear archivo en nuevo BRANCH
     touch "new_branch.txt"
 
-mezlar codigo MERGE
-    git merge ramab
+
+*******************************
+/// DIFERENCIAS - MEZCLAS /////
+*******************************
+DIFF - diferencias entre BRANCH
+
+
+
+MERGE - mezclar contenido entre BRANCH
+    git merge rama1
